@@ -4,94 +4,54 @@
     - name: Full Name
       value: Seungju Han
     - name: Date of Birth
-      value: 14th March 1879
+      value: Aug. 17, 1994
     - name: Languages
-      value: English, German
+      value: English, Korean
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Masters in Data Science
+      institution: University of San Francisco
+      year: 2022
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
+        - title: Relevant Coursework
           contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
-      description:
-        - Description 1.
-        - Description 2.
+            - Machine Learning, Deep Learning, Linear Regression, Time Series Analysis, A/B Testing, Relational Databases, NoSQL, Distributed Computing (Spark), Data Structures & Algorithms
+    - title: B.A. in Statistics
+      institution: Univ. of California, Berkeley
+      year: 2019
 
-- title: Experience
+- title: Professional Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - institution: ViFive 
+      title: Data Scientist
+      year: Aug 2022 - Present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Developed end-to-end ML pipeline for clinical assessments, boosting clinical assessment efficiency by 30%
+        - Led validation of AI-based models for clinical assessments with Stanford and Seoul National University Hospital researchers, successfully implementing vision AI models for musculoskeletal evaluations.
+        - Improved model architecture and optimized data augmentation pipeline for 3D human pose estimation.
+    - institution: New York Mets
+      title: Data Scientist
+      year: Oct 2021 - Jul 2022
       description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+        - Generated predictive models for infield and outfield batted ball outcomes.
+    - institution: Fastcampus Language
+      title: Business Analyst
+      year: Jun 2020 - Aug 2020
       description:
+        - Implemented KPI dashboard with Google Suite tools (BigQuery, Looker Studio)
+        - Analyzed user data to uncover user behaviors and provide actionalbe insights.
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
-  type: time_table
+- title: Technical Skills
+  type: map
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
-
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items: 
-        - Nobel Prize in Physics 
-        - Matteucci Medal
-    - year: 2029
-      items: 
-        - Max Planck Medal
-
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Topic 1.
-      items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
-
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - name: Machine Learning
+      value: scikit-learn, pytorch, Tensorflow
+    - name: Programming
+      value: Python, SQL(PostgreSQL, bigQuery), NoSQL(MongoDB, Firesbase)
+    - name: Data Analysis
+      value: numpy, pandas, matplotlib, seaborn, plotly
+    - name: Cloud Platform & Infrastructure
+      value: GCP, AWS, Docker, Kubernetes
