@@ -2,7 +2,7 @@
 layout: page
 title: 3d Pose Estimation
 description: showcasing 3d pose estimation model
-img: assets/img/skeleton.jpg
+img: assets/img/skeleton.png
 importance: 1
 category: work
 ---
@@ -15,7 +15,7 @@ Let's take a look at the front view of me walking.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/walking-front.jpeg" title="walking image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/walking-front.jpg" title="walking image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>    
 <div class="caption">
