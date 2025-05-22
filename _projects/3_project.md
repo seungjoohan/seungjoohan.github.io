@@ -30,10 +30,7 @@ Skills involved:
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/stock-prediction.gif" title="stock prediction app demo" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/modeler.jpg" title="working progress of dnn modeler" class="img-fluid rounded z-depth-1" %}
     </div>
-</div>
-<div class="caption">
-    The app is deployed with Streamlit
 </div>
 
