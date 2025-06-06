@@ -10,9 +10,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Stock prediction system | Seungju  Han</title>
+    <title>Pose with Vision Transformers | Seungju  Han</title>
     <meta name="author" content="Seungju  Han">
-    <meta name="description" content="let's predict stock prices!">
+    <meta name="description" content="experimenting pose models with vision transformers">
     <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
 
 
@@ -110,55 +110,23 @@
         <div class="post">
 
           <header class="post-header">
-            <h1 class="post-title">Stock prediction system</h1>
-            <p class="post-description">let's predict stock prices!</p>
+            <h1 class="post-title">Pose with Vision Transformers</h1>
+            <p class="post-description">experimenting pose models with vision transformers</p>
           </header>
 
           <article>
-            <p>This is my personal project to study ML system. You can check out the stock prediction app deployed <a href="https://itydvee55cjn8mbcjn3y4t.streamlit.app/" rel="external nofollow noopener" target="_blank">stock prediction system</a>.</p>
+            <p>As people say how universal the vision transformers are, I am trying the pose estimation model with the vision transformer. 
+I first started finetuning with DinoV2 backbone provided by Meta AI, but I am trying to add different transformers as well - FastViT by Apple implemented and more coming! Currently the model performances are not there to compare with CNN based pose models, but I’ll keep going. You can take a look at the code <a href="https://github.com/seungjoohan/dino_pose" rel="external nofollow noopener" target="_blank">here</a>. I’ve also integrated custom Low Rank Adaptation(LoRA) models to optimizie finetuning.</p>
 
 <p>Skills involved:</p>
 <ul>
-  <li>ML: ARIMA, Prophet, timeseries forecasting</li>
-  <li>DevOps:
-    <ul>
-      <li>API integration: yfinance</li>
-      <li>CI/CD: Github Actions</li>
-      <li>Version Control: Git</li>
-      <li>Containerization: Docker (Streamlit cloud community)</li>
-    </ul>
-  </li>
-  <li>Web: Streamlit</li>
+  <li>PyTorch</li>
+  <li>Vision Transformer</li>
+  <li>Pose Estimation</li>
+  <li>Low-Rank Adaptation</li>
 </ul>
 
-<p>Currently, my focus is developing the architecture where the system is self-sustainable. By self-sustainable, I mean entire ML system including the data flow, ML model building, and maintaining the models is done without any human intervention. Currently, data and model are updated every night for them to be ready to predict stocks tomorrow with the most current data.</p>
-
-<p>Since my main goal is to study and develop the system than to come up with very accurate model, the model is not reliable. Otherwise, I’d be trading to earn money rather than building the app!</p>
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <figure>
-
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/stock-prediction.gif-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/stock-prediction.gif-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/stock-prediction.gif-1400.webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/stock-prediction.gif" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="stock prediction app demo" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-
-    </div>
-</div>
-<div class="caption">
-    The app is deployed with Streamlit
-</div>
-
+<!-- TODO: IMAGE of pose -->
 
           </article>
 

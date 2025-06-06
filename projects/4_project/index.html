@@ -10,9 +10,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Stock prediction system | Seungju  Han</title>
+    <title>Web GUI based DNN Modeler | Seungju  Han</title>
     <meta name="author" content="Seungju  Han">
-    <meta name="description" content="let's predict stock prices!">
+    <meta name="description" content="build with ease">
     <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
 
 
@@ -33,7 +33,7 @@
     <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;">
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://seungjoohan.github.io/projects/3_project/">
+    <link rel="canonical" href="https://seungjoohan.github.io/projects/4_project/">
     
     <!-- Dark Mode -->
     
@@ -110,30 +110,36 @@
         <div class="post">
 
           <header class="post-header">
-            <h1 class="post-title">Stock prediction system</h1>
-            <p class="post-description">let's predict stock prices!</p>
+            <h1 class="post-title">Web GUI based DNN Modeler</h1>
+            <p class="post-description">build with ease</p>
           </header>
 
           <article>
-            <p>This is my personal project to study ML system. You can check out the stock prediction app deployed <a href="https://itydvee55cjn8mbcjn3y4t.streamlit.app/" rel="external nofollow noopener" target="_blank">stock prediction system</a>.</p>
+            <p>From my endeavor to modify and improve neural network model, I’ve experienced extreme 답답함 due to inconvenience of model building - training - testing cycle with limited resources. If you possess extensive resources, none of this matters! But if you are working on personal project or you have limited resources, one failed experiment costs too much.</p>
+
+<p>So, I am trying to build a FREE neural network modeling tool based on web GUI with drag-and-drop interface. This modeler will come with following features:
+    * Build / Modify existing model from web interface
+    * Train model for few epochs with provided/custom data
+    * Display validation results
+    * Save and export the model / model building code</p>
+
+<p>Still in progress at <a href="https://github.com/seungjoohan/dnn-modeler" rel="external nofollow noopener" target="_blank">dnn-modeler</a></p>
+
+<p>Since the tool will only utilize free resources at the moment, it’s not ideal for large scale network modeling. Building the model will face no interference even for the big model, but the resources will not be sufficient to train unless you come with the extensive resources. I recommend testing modules in your model if your model is big!</p>
 
 <p>Skills involved:</p>
 <ul>
-  <li>ML: ARIMA, Prophet, timeseries forecasting</li>
+  <li>ML: Pytorch</li>
   <li>DevOps:
     <ul>
-      <li>API integration: yfinance</li>
-      <li>CI/CD: Github Actions</li>
-      <li>Version Control: Git</li>
-      <li>Containerization: Docker (Streamlit cloud community)</li>
+      <li>Backend: FastAPI</li>
+      <li>CI/CD:</li>
+      <li>Version Control:</li>
+      <li>Containerization:</li>
     </ul>
   </li>
-  <li>Web: Streamlit</li>
+  <li>Web: React</li>
 </ul>
-
-<p>Currently, my focus is developing the architecture where the system is self-sustainable. By self-sustainable, I mean entire ML system including the data flow, ML model building, and maintaining the models is done without any human intervention. Currently, data and model are updated every night for them to be ready to predict stocks tomorrow with the most current data.</p>
-
-<p>Since my main goal is to study and develop the system than to come up with very accurate model, the model is not reliable. Otherwise, I’d be trading to earn money rather than building the app!</p>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -141,22 +147,19 @@
 
   <picture>
     
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/stock-prediction.gif-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/stock-prediction.gif-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/stock-prediction.gif-1400.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/modeler-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/modeler-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/modeler-1400.webp"></source>
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/stock-prediction.gif" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="stock prediction app demo" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/modeler.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="working progress of dnn modeler" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
 </figure>
 
     </div>
-</div>
-<div class="caption">
-    The app is deployed with Streamlit
 </div>
 
 
