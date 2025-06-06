@@ -1,33 +1,19 @@
 ---
 layout: page
-title: Stock prediction system
-description: let's predict stock prices!
-img: assets/img/stock.jpg
-importance: 2
+title: Pose with Vision Transformers
+description: experimenting pose models with vision transformers
+img: assets/img/skel.webp
+importance: 1
 category: work
 ---
 
-This is my personal project to study ML system. You can check out the stock prediction app deployed [stock prediction system](https://itydvee55cjn8mbcjn3y4t.streamlit.app/).
+As people say how universal the vision transformers are, I am trying the pose estimation model with the vision transformer. 
+I first started finetuning with DinoV2 backbone provided by Meta AI, but I am trying to add different transformers as well - FastViT by Apple implemented and more coming! Currently the model performances are not there to compare with CNN based pose models, but I'll keep going. You can take a look at the code [here](https://github.com/seungjoohan/dino_pose). I've also integrated custom Low Rank Adaptation(LoRA) models to optimizie finetuning.
 
 Skills involved:
- - ML: ARIMA, Prophet, timeseries forecasting
- - DevOps:
-    - API integration: yfinance
-    - CI/CD: Github Actions
-    - Version Control: Git
-    - Containerization: Docker (Streamlit cloud community)
- - Web: Streamlit
+ - PyTorch
+ - Vision Transformer
+ - Pose Estimation
+ - Low-Rank Adaptation
 
-Currently, my focus is developing the architecture where the system is self-sustainable. By self-sustainable, I mean entire ML system including the data flow, ML model building, and maintaining the models is done without any human intervention. Currently, data and model are updated every night for them to be ready to predict stocks tomorrow with the most current data.
-
-Since my main goal is to study and develop the system than to come up with very accurate model, the model is not reliable. Otherwise, I'd be trading to earn money rather than building the app!
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/stock-prediction.gif" title="stock prediction app demo" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    The app is deployed with Streamlit
-</div>
-
+<!-- TODO: IMAGE of pose -->
