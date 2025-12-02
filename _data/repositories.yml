@@ -1,12 +1,9 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - seungjoohan
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - seungjoohan/dino-pose
+  - seungjoohan/3d_pose_estimation
+  - seungjoohan/visa-tracker
+  - seungjoohan/dnn-modeler
+  - seungjoohan/stock-prediction-system

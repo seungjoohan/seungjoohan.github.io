@@ -3,20 +3,21 @@ layout: page
 title: Stock prediction system
 description: let's predict stock prices!
 img: assets/img/stock.jpg
-importance: 2
+importance: 1
 category: work
 ---
 
 This is my personal project to study ML system. You can check out the stock prediction app deployed [stock prediction system](https://itydvee55cjn8mbcjn3y4t.streamlit.app/).
 
 Skills involved:
- - ML: ARIMA, Prophet, timeseries forecasting
- - DevOps:
-    - API integration: yfinance
-    - CI/CD: Github Actions
-    - Version Control: Git
-    - Containerization: Docker (Streamlit cloud community)
- - Web: Streamlit
+
+- ML: ARIMA, Prophet, timeseries forecasting
+- DevOps:
+  - API integration: yfinance
+  - CI/CD: Github Actions
+  - Version Control: Git
+  - Containerization: Docker (Streamlit cloud community)
+- Web: Streamlit
 
 Currently, my focus is developing the architecture where the system is self-sustainable. By self-sustainable, I mean entire ML system including the data flow, ML model building, and maintaining the models is done without any human intervention. Currently, data and model are updated every night for them to be ready to predict stocks tomorrow with the most current data.
 
@@ -30,4 +31,3 @@ Since my main goal is to study and develop the system than to come up with very 
 <div class="caption">
     The app is deployed with Streamlit
 </div>
-
