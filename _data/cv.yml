@@ -25,9 +25,9 @@
 - title: Professional Experience
   type: time_table
   contents:
-    - institution: ViFive 
+    - institution: ViFive
       title: Data Scientist
-      year: Aug 2022 - Present
+      year: Aug 2022 - May 2025
       description:
         - Developed end-to-end ML pipeline for clinical assessments, boosting clinical assessment efficiency by 30%
         - Led validation of AI-based models for clinical assessments with Stanford and Seoul National University Hospital researchers, successfully implementing vision AI models for musculoskeletal evaluations.
