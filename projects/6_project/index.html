@@ -10,9 +10,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Web GUI based DNN Modeler | Seungju  Han</title>
+    <title>ProPINGquity | Seungju  Han</title>
     <meta name="author" content="Seungju  Han">
-    <meta name="description" content="build with ease">
+    <meta name="description" content="SNS to make real connections">
     <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
 
 
@@ -33,7 +33,7 @@
     <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;">
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://seungjoohan.github.io/projects/4_project/">
+    <link rel="canonical" href="https://seungjoohan.github.io/projects/6_project/">
     
     <!-- Dark Mode -->
     
@@ -110,37 +110,22 @@
         <div class="post">
 
           <header class="post-header">
-            <h1 class="post-title">Web GUI based DNN Modeler</h1>
-            <p class="post-description">build with ease</p>
+            <h1 class="post-title">ProPINGquity</h1>
+            <p class="post-description">SNS to make real connections</p>
           </header>
 
           <article>
-            <p>From my endeavor to modify and improve neural network model, I’ve experienced extreme frustration due to inconvenience of model building - training - testing cycle with limited resources. If you possess extensive resources, none of this matters! But if you are working on personal project or you have limited resources, one failed experiment costs too much.</p>
+            <p>Living in New York City, the toughest aspect of New Yorkers for me to get accustomed to was making an appointment with a friend to grab a dinner or a beer together. I prefer to text a friend “let’s grab a dinner tonight” than to text “let’s grab a dinner this friday at 6pm”.</p>
 
-<p>So, I am trying to build a FREE neural network modeling tool based on web GUI with drag-and-drop interface. This modeler will come with following features:
-_ Build / Modify existing model from web interface
-_ Train model for few epochs with provided/custom data
-_ Display validation results
-_ Save and export the model / model building code</p>
-
-<p>Still in progress at <a href="https://github.com/seungjoohan/dnn-modeler" rel="external nofollow noopener" target="_blank">dnn-modeler</a></p>
-
-<p>Since the tool will only utilize free resources at the moment, it’s not ideal for large scale network modeling. Building the model will face no interference even for the big model, but the resources will not be sufficient to train unless you come with the extensive resources. I recommend testing modules in your model if your model is big!</p>
-
-<p>Skills involved:</p>
-
+<p>I know I’m spontaneous and I’ve built an app, ProPINGquity, to satisfy my needs. Through the app, you can:</p>
 <ul>
-  <li>ML: Pytorch</li>
-  <li>DevOps:
-    <ul>
-      <li>Backend: FastAPI</li>
-      <li>CI/CD:</li>
-      <li>Version Control:</li>
-      <li>Containerization:</li>
-    </ul>
-  </li>
-  <li>Web: React</li>
+  <li>Ping at your location to find out who’s nearby</li>
+  <li>Connect and chat</li>
+  <li>Find places to go</li>
+  <li>Get recommendation on where to meet</li>
 </ul>
+
+<p>Currently only available for <a href="https://testflight.apple.com/join/h3ssEK8c" rel="external nofollow noopener" target="_blank">beta testing for iOS</a>. Join me and connect with friends!</p>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -148,13 +133,13 @@ _ Save and export the model / model building code</p>
 
   <picture>
     
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/modeler-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/modeler-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/modeler-1400.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/proximity-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/proximity-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/proximity-1400.webp"></source>
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/modeler.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="working progress of dnn modeler" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/proximity.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="ProPINGquity screenshot" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
@@ -162,6 +147,26 @@ _ Save and export the model / model building code</p>
 
     </div>
 </div>
+
+<p>Technical Highlights:</p>
+<ul>
+  <li>Real-time location sharing: Friends can see each other’s live location on an interactive map with customizable visibility settings</li>
+  <li>WebSocket-based chat: Instant messaging with read receipts, typing indicators, and media sharing</li>
+  <li>Google Places integration: Search places, browse by category, view ratings, photos, and contact info</li>
+  <li>Push notifications: Stay connected with real-time alerts for ping, messages, and friend requests</li>
+  <li>Privacy-first design: Contact information is encrypted at rest and never shared with third parties</li>
+</ul>
+
+<p>Tech Stack:</p>
+<ul>
+  <li>Frontend: React Native (Expo), TypeScript</li>
+  <li>Backend: FastAPI (Python)</li>
+  <li>Database: Firebase Firestore</li>
+  <li>Auth: Firebase Authentication</li>
+  <li>Storage: Google Cloud Storage</li>
+  <li>Maps: Google Maps Platform (Maps SDK, Places API, Directions API)</li>
+  <li>Real-time: WebSockets, Firebase Cloud Messaging</li>
+</ul>
 
           </article>
 
@@ -172,7 +177,7 @@ _ Save and export the model / model building code</p>
     <!-- Footer -->    
     <footer class="fixed-bottom">
       <div class="container mt-0">
-        © Copyright 2025 Seungju  Han. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>.
+        © Copyright 2026 Seungju  Han. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>.
 
       </div>
     </footer>
