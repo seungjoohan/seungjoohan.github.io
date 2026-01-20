@@ -8,6 +8,31 @@
     - name: Languages
       value: English, Korean
 
+- title: Professional Experience
+  type: time_table
+  contents:
+    - institution: ViFive
+      title: Data Scientist
+      year: Aug 2022 - May 2025
+      description:
+        - Led clinical AI validation study with Stanford Medicine, demonstrating vision AI-based ROM measurement accuracy comparable to gold-standard goniometry. Results published in the Journal of Medical Artificial Intelligence (2024).
+        - Improved 3D pose estimation accuracy through a custom self-attention module while maintaining on-device latency requirements for real-time iOS deployment.
+        - Designed and implemented perspective-agnostic pose system that internally normalizes user orientation, eliminating camera setup requirements and achieving usability improvement in beta testing.
+        - Enhanced a Random Forest pose classification model accuracy by applying advanced feature engineering techniques, boosting reliability of clinical assessment predictions.
+        - Optimized data augmentation pipeline and training workflows, reducing computation overhead.
+    - institution: New York Mets
+      title: Data Scientist
+      year: Oct 2021 - Jul 2022
+      description:
+        - Built expected distribution model for batted balls by integrating pitcher/batter data including pitch types, handedness, and batted ball statistics.
+        - Applied K-Means and KNN clustering to identify pitcher archetypes and simulate realistic matchups, improving player performance forecasting accuracy.
+        - Delivered defensive alignment insights that informed positioning strategy, contributing to the team improving Defensive Runs Saved.
+    - institution: Fastcampus Language
+      title: Business Analyst
+      year: Jun 2020 - Aug 2020
+      description:
+        - Automated KPI dashboard for leadership using Google Suite tools (BigQuery, Looker, and Google Sheets), reducing reporting time.
+        - Performed SQL-based data analysis and reporting for leadership, reducing reporting time.
 - title: Education
   type: time_table
   contents:
@@ -21,28 +46,6 @@
     - title: B.A. in Statistics
       institution: Univ. of California, Berkeley
       year: 2019
-
-- title: Professional Experience
-  type: time_table
-  contents:
-    - institution: ViFive
-      title: Data Scientist
-      year: Aug 2022 - May 2025
-      description:
-        - Developed end-to-end ML pipeline for clinical assessments, boosting clinical assessment efficiency by 30%
-        - Led validation of AI-based models for clinical assessments with Stanford and Seoul National University Hospital researchers, successfully implementing vision AI models for musculoskeletal evaluations.
-        - Improved model architecture and optimized data augmentation pipeline for 3D human pose estimation.
-    - institution: New York Mets
-      title: Data Scientist
-      year: Oct 2021 - Jul 2022
-      description:
-        - Generated predictive models for infield and outfield batted ball outcomes.
-    - institution: Fastcampus Language
-      title: Business Analyst
-      year: Jun 2020 - Aug 2020
-      description:
-        - Implemented KPI dashboard with Google Suite tools (BigQuery, Looker Studio)
-        - Analyzed user data to uncover user behaviors and provide actionalbe insights.
 
 - title: Technical Skills
   type: map
