@@ -3,7 +3,7 @@ layout: page
 title: Pose with Vision Transformers
 description: experimenting pose models with vision transformers
 img: assets/img/skel.webp
-importance: 1
+importance: 2
 category: work
 ---
 

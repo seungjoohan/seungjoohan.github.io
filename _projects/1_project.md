@@ -3,7 +3,7 @@ layout: page
 title: 3d Pose Estimation
 description: showcasing 3d pose estimation model
 img: assets/img/skeleton.png
-importance: 1
+importance: 2
 category: work
 ---
 

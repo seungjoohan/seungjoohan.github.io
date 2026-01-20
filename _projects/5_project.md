@@ -3,7 +3,7 @@ layout: page
 title: visa tracker
 description: visa policy news tracking and analysis system
 img: assets/img/visa.jpg
-importance: 1
+importance: 2
 category: work
 ---
 

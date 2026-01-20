@@ -3,7 +3,7 @@ layout: page
 title: Stock prediction system
 description: let's predict stock prices!
 img: assets/img/stock.jpg
-importance: 1
+importance: 2
 category: work
 ---
 
