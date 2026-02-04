@@ -5,9 +5,11 @@ description: showcasing 3d pose estimation model
 img: assets/img/skeleton.png
 importance: 2
 category: work
+github_url: https://github.com/seungjoohan/3d_pose_estimation
+demo_url: https://pose-estimation-app-974323386375.us-central1.run.app/
 ---
 
-I am hereby presenting what I was able to achieve with 3D pose estimation at ViFive. You can test with your own image/camera [here](https://pose-estimation-app-974323386375.us-central1.run.app/) - though the app might take some time to load as I deployed using free resources!
+I am hereby presenting what I was able to achieve with 3D pose estimation at ViFive. You can test with your own image/camera through the live demo - though the app might take some time to load as I deployed using free resources!
 
 Skills involved:
  - ML: Tensorflow, Pose Estimation, Vision

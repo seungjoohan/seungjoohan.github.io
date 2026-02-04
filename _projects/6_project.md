@@ -5,9 +5,10 @@ description: SNS to make real connections
 img: assets/img/ping-icon.png
 importance: 1
 category: work
+app_url: https://testflight.apple.com/join/h3ssEK8c
 ---
 
-Living in New York City, the toughest aspect of New Yorkers for me to get accustomed to was making an appointment with a friend to grab a dinner or a beer together. I prefer to text a friend "let's grab a dinner tonight" than to text "let's grab a dinner this friday at 6pm". 
+Living in New York City, the toughest aspect of New Yorkers for me to get accustomed to was making an appointment with a friend to grab a dinner or a beer together. I prefer to text a friend "let's grab a dinner tonight" than to text "let's grab a dinner this friday at 6pm".
 
 I know I'm spontaneous and I've built an app, ProPINGquity, to satisfy my needs. Through the app, you can:
 * Ping at your location to find out who's nearby
@@ -15,7 +16,7 @@ I know I'm spontaneous and I've built an app, ProPINGquity, to satisfy my needs.
 * Find places to go
 * Get recommendation on where to meet
 
-Currently only available for [beta testing for iOS](https://testflight.apple.com/join/h3ssEK8c). Join me and connect with friends!
+Join me for beta testing and connect with friends!
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">

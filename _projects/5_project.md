@@ -5,13 +5,12 @@ description: visa policy news tracking and analysis system
 img: assets/img/visa.jpg
 importance: 2
 category: work
+github_url: https://github.com/seungjoohan/visa-tracker
 ---
 
 From 2025, a period of rapid and dramatic visa policy changes have begun. Staying informed about critical immigration updates became a daily necessity. Manually monitoring multiple news source was time-consuming and unreliable, risking missed policy announcements that can have immediate personal impact.
 
 So, I built an automated visa related news tracking system that collects, analyzes, and delivers daily email summaries of visa-related news.
-
-Still in progress at [visa-tracker](https://github.com/seungjoohan/visa-tracker)
 
 Skills involved:
 
