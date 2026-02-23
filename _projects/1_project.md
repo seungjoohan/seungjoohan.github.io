@@ -12,11 +12,12 @@ demo_url: https://pose-estimation-app-974323386375.us-central1.run.app/
 I am hereby presenting what I was able to achieve with 3D pose estimation at ViFive. You can test with your own image/camera through the live demo - though the app might take some time to load as I deployed using free resources!
 
 Skills involved:
- - ML: Tensorflow, Pose Estimation, Vision
- - Web: Flask
- - Version Control: Git
- - Containerization: Docker
- - Deployment: Google Cloud Platform
+
+- ML: Tensorflow, Pose Estimation, Vision
+- Web: Flask
+- Version Control: Git
+- Containerization: Docker
+- Deployment: Google Cloud Platform
 
 Be mindful to use clear image/video to test the model. As I removed all pre & post processing, the model might struggle to locate you. I attached some test videos from myself.
 
