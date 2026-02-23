@@ -10,9 +10,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>projects | Seungju  Han</title>
+    <title>Agentic Trading System | Seungju  Han</title>
     <meta name="author" content="Seungju  Han">
-    <meta name="description" content="A growing collection of my projects.">
+    <meta name="description" content="LLM-driven stock trading agent with live market data, sentiment analysis, and risk management">
     <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
 
 
@@ -33,7 +33,7 @@
     <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;">
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://seungjoohan.github.io/projects/">
+    <link rel="canonical" href="https://seungjoohan.github.io/projects/3_project/">
     
     <!-- Dark Mode -->
     
@@ -73,8 +73,8 @@
               
 
               <!-- Other pages -->
-              <li class="nav-item active">
-                <a class="nav-link" href="/projects/">projects<span class="sr-only">(current)</span></a>
+              <li class="nav-item ">
+                <a class="nav-link" href="/projects/">projects</a>
               </li>
               <li class="nav-item ">
                 <a class="nav-link" href="/cv/">cv</a>
@@ -107,116 +107,74 @@
         <div class="post">
 
           <header class="post-header">
-            <h1 class="post-title">projects</h1>
-            <p class="post-description">A growing collection of my projects.</p>
+            <h1 class="post-title">Agentic Trading System</h1>
+            <p class="post-description">LLM-driven stock trading agent with live market data, sentiment analysis, and risk management</p>
             
+<div class="project-links" style="margin-bottom: 20px; margin-top: 10px;">
+  
+  <a href="https://github.com/seungjoohan/stock-prediction-system" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 8px 16px; margin-right: 10px; margin-bottom: 10px; background-color: #24292e; color: white; text-decoration: none; border-radius: 5px; font-weight: 500;">
+    <i class="fab fa-github"></i> GitHub
+  </a>
+  
+
+  
+
+  
+</div>
+
 
           </header>
 
           <article>
-            <!-- pages/projects.md -->
-<div class="projects">
-  <!-- Display categorized projects -->
-  <!-- -->
-  <!-- <h2 class="category">work</h2> -->
-  <!-- Generate cards for each project -->
-  <div class="grid">
-<!-- _includes/projects.html -->
-<div class="grid-sizer"></div>
-<div class="grid-item">
-  <a href="/projects/6_project/">
-      <div class="card hoverable">
-<figure>
+            <p>I originally built this as a personal ML learning exercise: a simple Streamlit app that pulled stock data via yfinance, trained ARIMA and Prophet models on TSLA, AAPL, and GOOG, and served up predictions. The focus was on understanding how to take a model from notebook to production, not on whether the predictions were actually good (they weren’t).</p>
+
+<p>But, as LLM based agentic system dominated my feeds on every SNS, I couldn’t help to build something of my own.</p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
 
   <picture>
     
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/ping-icon-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/ping-icon-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/ping-icon-1400.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/tradingdashboard-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/tradingdashboard-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/tradingdashboard-1400.webp"></source>
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/ping-icon.png" width="auto" height="auto" alt="project thumbnail" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/tradingdashboard.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="Trading Dashboard" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
 </figure>
 
-        <div class="card-body">
-          <h2 class="card-title text-lowercase">ProPINGquity</h2>
-          <p class="card-text">SNS to make real connections</p>
-          <div class="row ml-1 mr-1 p-0">
-          </div>
-        </div>
-      </div>
-    </a>
+    </div>
 </div>
-<!-- _includes/projects.html -->
-<div class="grid-sizer"></div>
-<div class="grid-item">
-  <a href="/projects/1_project/">
-      <div class="card hoverable">
-<figure>
 
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/skeleton-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/skeleton-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/skeleton-1400.webp"></source>
-    
+<p>The agent runs continuously during market hours and operates in two loops. Every 5 minutes it ingests news from Finnhub and RSS feeds, runs LLM sentiment analysis, and indexes everything into a two-layer RAG store (SQLite for structured retrieval, ChromaDB for semantic similarity). Every 15 minutes it gathers live prices via WebSocket, current portfolio state, fundamentals, FRED macro data, and the last 7 days of sentiment history. Then it builds a prompt, and asks the LLM what to do. Any trades that come back get validated by a risk manager before touching Alpaca.</p>
 
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/skeleton.png" width="auto" height="auto" alt="project thumbnail" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+<p>I’m currently running it in paper trading mode to see whether it actually makes money before letting it invest with my money. Next up is integrating ML-based stock prediction with current agentic trading system!</p>
 
-  </picture>
+<p>Skills involved:</p>
 
-</figure>
+<ul>
+  <li>
+<strong>LLM orchestration</strong>: Groq (LLaMA/Mixtral) primary, Google Gemini fallback, rate-limited batch processing</li>
+  <li>
+<strong>Retrieval-Augmented Generation</strong>: ChromaDB vector store + SQLite structured retrieval, <code class="language-plaintext highlighter-rouge">sentence-transformers/all-MiniLM-L6-v2</code> embeddings</li>
+  <li>
+<strong>Real-time data</strong>: Finnhub WebSocket with reconnect, ping/pong keepalive, staleness detection</li>
+  <li>
+<strong>Risk management</strong>: confidence threshold, position size caps, daily loss circuit breaker, VIX circuit breaker, earnings blackout, stop-loss</li>
+  <li>
+<strong>APIs</strong>: Alpaca (execution), Finnhub (prices/news/fundamentals), FRED (macro), Groq, Gemini</li>
+  <li>
+<strong>Infrastructure</strong>: SQLite (WAL mode), Streamlit dashboard</li>
+</ul>
 
-        <div class="card-body">
-          <h2 class="card-title text-lowercase">3d Pose Estimation</h2>
-          <p class="card-text">showcasing 3d pose estimation model</p>
-          <div class="row ml-1 mr-1 p-0">
-          </div>
-        </div>
-      </div>
-    </a>
-</div>
-<!-- _includes/projects.html -->
-<div class="grid-sizer"></div>
-<div class="grid-item">
-  <a href="/projects/2_project/">
-      <div class="card hoverable">
-<figure>
-
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/skel.webp-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/skel.webp-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/skel.webp-1400.webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/skel.webp" width="auto" height="auto" alt="project thumbnail" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-
-        <div class="card-body">
-          <h2 class="card-title text-lowercase">Pose with Vision Transformers</h2>
-          <p class="card-text">experimenting pose models with vision transformers</p>
-          <div class="row ml-1 mr-1 p-0">
-          </div>
-        </div>
-      </div>
-    </a>
-</div>
-<!-- _includes/projects.html -->
-<div class="grid-sizer"></div>
-<div class="grid-item">
-  <a href="/projects/3_project/">
-      <div class="card hoverable">
-<figure>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
 
   <picture>
     
@@ -226,52 +184,16 @@
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/flow-chart.jpg" width="auto" height="auto" alt="project thumbnail" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/flow-chart.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="System architecture" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
 </figure>
 
-        <div class="card-body">
-          <h2 class="card-title text-lowercase">Agentic Trading System</h2>
-          <p class="card-text">LLM-driven stock trading agent with live market data, sentiment analysis, and risk management</p>
-          <div class="row ml-1 mr-1 p-0">
-          </div>
-        </div>
-      </div>
-    </a>
+    </div>
 </div>
-<!-- _includes/projects.html -->
-<div class="grid-sizer"></div>
-<div class="grid-item">
-  <a href="/projects/5_project/">
-      <div class="card hoverable">
-<figure>
-
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/visa-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/visa-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/visa-1400.webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/visa.jpg" width="auto" height="auto" alt="project thumbnail" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-
-        <div class="card-body">
-          <h2 class="card-title text-lowercase">visa tracker</h2>
-          <p class="card-text">visa policy news tracking and analysis system</p>
-          <div class="row ml-1 mr-1 p-0">
-          </div>
-        </div>
-      </div>
-    </a>
-</div>
-  </div>
+<div class="caption">
+    Every 15-minute decision cycle gathers live prices, portfolio state, macro data, and 7 days of RAG-retrieved sentiment history before calling the LLM.
 </div>
 
           </article>

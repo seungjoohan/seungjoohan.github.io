@@ -126,23 +126,43 @@
           </header>
 
           <article>
-            <p>From 2025, a period of rapid and dramatic visa policy changes have begun. Staying informed about critical immigration updates became a daily necessity. Manually monitoring multiple news source was time-consuming and unreliable, risking missed policy announcements that can have immediate personal impact.</p>
+            <p>From 2025, a period of rapid and dramatic visa policy changes have begun. Staying informed about critical immigration updates became a daily necessity. Manually monitoring multiple news sources was time-consuming and unreliable, risking missed policy announcements that can have immediate personal impact.</p>
 
-<p>So, I built an automated visa related news tracking system that collects, analyzes, and delivers daily email summaries of visa-related news.</p>
+<p>So, I built an automated visa news tracking and analysis system — and then kept going, turning it into a full RAG (Retrieval-Augmented Generation) platform.</p>
+
+<p><strong>v1</strong> collected news from NewsAPI, classified articles by urgency using sentence-transformer semantic similarity, and delivered daily HTML email summaries via GitHub Actions cron.</p>
+
+<p><strong>v2</strong> adds a RAG pipeline grounded in official policy documents:</p>
+
+<ul>
+  <li>
+<strong>Knowledge base</strong>: 8 CFR Title 8 (federal immigration regulations) ingested from the public <a href="https://www.ecfr.gov/" rel="external nofollow noopener" target="_blank">eCFR API</a>, chunked into ~426 policy segments and embedded with <code class="language-plaintext highlighter-rouge">BAAI/bge-base-en-v1.5</code>
+</li>
+  <li>
+<strong>Vector store</strong>: FAISS (IndexFlatIP with L2-normalized vectors for cosine similarity), stored locally and committed to the repo</li>
+  <li>
+<strong>LLM analysis</strong>: Each article is analyzed by Claude Haiku with retrieved policy chunks as context, producing structured output — importance level, affected visa types, action required, deadline, and specific CFR citations</li>
+  <li>
+<strong>Fallback chain</strong>: LLM+RAG → LLM only → semantic+keyword → keyword only, so the pipeline never breaks even without an API key</li>
+  <li>
+<strong>Evaluation framework</strong>: Labeled article dataset, precision/recall/F1 metrics, and a comparison CLI to benchmark keyword vs. semantic vs. LLM vs. LLM+RAG classifiers side-by-side</li>
+  <li>
+<strong>Knowledge base updates</strong>: Weekly GitHub Actions workflow checks the eCFR API for regulatory changes and re-ingests only when Title 8 has actually been updated</li>
+</ul>
 
 <p>Skills involved:</p>
 
 <ul>
-  <li>Data: <a href="https://newsapi.org/" rel="external nofollow noopener" target="_blank">NewsAPI</a>
-</li>
-  <li>ML: Sentence transformers, semantic similarity, text classification</li>
-  <li>DevOps:
-    <ul>
-      <li>Backend: FastAPI</li>
-      <li>CI/CD: Github Actions</li>
-      <li>Email Systems: SMTP</li>
-    </ul>
-  </li>
+  <li>
+<strong>RAG</strong>: FAISS vector store, sentence-transformers, chunk retrieval, prompt construction</li>
+  <li>
+<strong>LLM</strong>: Anthropic Claude API, structured JSON output, cost and latency tracking</li>
+  <li>
+<strong>Data</strong>: <a href="https://newsapi.org/" rel="external nofollow noopener" target="_blank">NewsAPI</a>, <a href="https://www.ecfr.gov/" rel="external nofollow noopener" target="_blank">eCFR API</a>, XML parsing</li>
+  <li>
+<strong>ML</strong>: Sentence transformers, semantic similarity, classification metrics (precision/recall/F1)</li>
+  <li>
+<strong>DevOps</strong>: FastAPI, GitHub Actions, SMTP email</li>
 </ul>
 
 <div class="row">
